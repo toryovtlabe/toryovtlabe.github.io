@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+}
+
+@media (max-width: 720px) {
+  #burger:checked ~ .menu nav ul {
+    width: 40%;
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #burger:checked ~ .menu nav ul li {
+    display: inline-block;
+  }
+  #burger:checked ~ .menu nav ul li a {
+    visibility: visible;
+  }
+  header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .LogoBox {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 1%;
+            flex: 1 1 1%;
+    max-width: 28.5%;
+  }
+  header .LogoBox .logo {
+    width: 100%;
+  }
+  header label[for=burger] {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 1%;
+            flex: 0 0 1%;
+    visibility: visible;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-size: 5vh;
+    color: white;
+    cursor: pointer;
+    margin-right: 2%;
+  }
+  header nav .spisok {
+    background-color: #807676;
+    border: solid #C1C1C1 3px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+  }
+  header nav .spisok li {
+    text-align: center;
+    display: none;
+    padding: 2%;
+  }
+  header nav .spisok li a {
+    font-size: 3vw;
+    visibility: hidden;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+}
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #807676;
+  border: solid #C1C1C1 0.2vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header #burger {
+  visibility: hidden;
+}
+header label {
+  visibility: hidden;
+}
+header nav {
+  width: 100%;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+header nav ul li {
+  color: white;
+}
+header nav ul li a {
+  font-size: 2vw;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+}
+header nav ul li a:hover {
+  color: #E8BC69;
+}
+header nav ul li a.company {
+  word-spacing: 0;
+}
+header .menu {
+  width: 100%;
+}
+header .LogoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .LogoBox .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: max(5vw, 5vh);
+  color: white;
+  margin: 0 2% 0 2%;
+}
+header .LogoBox .name {
+  margin: auto;
+}
+header .LogoBox .name p {
+  text-shadow: 0.05vw 0.05vw 0 black, -0.05vw -0.05vw 0 black, -0.05vw 0.05vw 0 black, 0.05vw -0.05vw 0 black;
+  font-size: max(2vw, 2vh);
+  text-align: center;
+  color: #C1C1C1;
+  font-family: "Questrial", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  background-color: #343434;
+  font-family: "Raleway", sans-serif;
+}
+body hr {
+  margin: 3vw auto 3vw auto;
+  width: 90%;
+  border-color: #C4C7C8;
+}
+body .imgback {
+  background: url("/img/img_13.jpeg");
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 56.25vw;
+}
+body h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto 1.5% auto;
+  border: 0.3vw #C4C7C8 solid;
+  background-color: #979595;
+  border-radius: 50px;
+  color: white;
+  padding: 1% 0;
+  width: max(25vw, 25vh);
+  font-size: max(2vw, 2vh);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-shadow: 0.1vw 0.1vw 0 black, -0.1vw -0.1vw 0 black, -0.1vw 0.1vw 0 black, 0.1vw -0.1vw 0 black;
+}
+body h1.head {
+  margin-top: -10%;
+  margin-bottom: 1.5%;
+}
+body h1.head2 {
+  width: max(40vw, 40vh);
+}
+body .info_about_school, body .info_about_lessons {
+  margin: auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #D9D9D9;
+  border-radius: 15px;
+  border: 0.3vw solid #00b7ff;
+}
+body .info_about_school .text, body .info_about_lessons .text {
+  width: 96%;
+  padding: 1%;
+  font-size: max(1.5vw, 2vh);
+  text-align: left;
+}
+body .info {
+  margin: auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 50px;
+  margin-bottom: 3vw;
+}
+body .info .text {
+  color: white;
+  width: 96%;
+  font-size: max(1.5vw, 2vh);
+  text-align: left;
+}
+body footer {
+  margin-top: 0.15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #807676;
+  border: solid #C1C1C1 0.2vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body footer .LogoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 3%;
+}
+body footer .LogoBox .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: max(5vw, 5vh);
+  color: white;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+body footer .LogoBox .name {
+  margin: auto;
+}
+body footer .LogoBox .name p {
+  font-size: max(2vw, 2vh);
+  text-align: center;
+  color: #C1C1C1;
+  font-family: "Questrial", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-shadow: 0.1vw 0.1vw 0 black, -0.1vw -0.1vw 0 black, -0.1vw 0.1vw 0 black, 0.1vw -0.1vw 0 black;
+}
+body footer .menu {
+  width: 100%;
+  text-align: center;
+}
+body footer .menu a {
+  -webkit-transition: -webkit-filter 0.2s;
+  transition: -webkit-filter 0.2s;
+  -o-transition: filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
+}
+body footer .menu a img {
+  width: max(5vw, 3vh);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+body footer .menu a:hover {
+  -webkit-filter: grayscale(0.3);
+          filter: grayscale(0.3);
+}
+body footer .menu a:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+body footer .menu p {
+  font-weight: 700;
+  text-shadow: 0.05vw 0.05vw 0 black, -0.05vw -0.05vw 0 black, -0.05vw 0.05vw 0 black, 0.05vw -0.05vw 0 black;
+  color: white;
+  font-size: max(2vw, 1.5vh);
+}
+body footer .number {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-shadow: 0.05vw 0.05vw 0 black, -0.05vw -0.05vw 0 black, -0.05vw 0.05vw 0 black, 0.05vw -0.05vw 0 black;
+}
+body footer .number img {
+  width: max(4vw, 3vh);
+}
+body footer .number a {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: max(3vw, 1vh);
+  text-decoration: none;
+}
