@@ -6,6 +6,37 @@
   font-size: 32px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.up {
+  border: max(0.1vw, 0.1vh) solid #C4C7C8;
+  border-radius: max(1vw, 1vh);
+  width: 30%;
+  background-color: #979595;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 3%;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  -o-transition: transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+.up:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.up a {
+  font-size: max(3vw, 3vh);
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  text-shadow: 0.05vw 0.05vw 0 black, -0.05vw -0.05vw 0 black, -0.05vw 0.05vw 0 black, 0.05vw -0.05vw 0 black;
+}
+
 @media (max-width: 720px) {
   #burger:checked ~ .menu nav ul {
     width: 40%;
