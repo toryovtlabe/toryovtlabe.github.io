@@ -22,7 +22,7 @@ html {
           align-items: center;
   border: max(0.1vw, 0.1vh) solid #C4C7C8;
   border-radius: max(1vw, 1vh);
-  width: 20%;
+  width: 15%;
   background-color: #979595;
   text-align: center;
   margin: auto;
@@ -218,7 +218,7 @@ body h1 {
   font-weight: 700;
   text-align: center;
   margin: 1.5% auto 1.5% auto;
-  border: 3.5px #C4C7C8 solid;
+  border: max(0.2vw, 0.2vh) #C4C7C8 solid;
   background-color: #979595;
   border-radius: 50px;
   color: white;
@@ -229,7 +229,7 @@ body h1 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  text-shadow: 1px 1px 0 black, -1px -1px 0 black, -1px 1px 0 black, 1px -1px 0 black;
+  text-shadow: 0.1vw 0.1vw 0 black, -0.1vw -0.1vw 0 black, -0.1vw 0.1vw 0 black, 0.1vw -0.1vw 0 black;
 }
 body .info1 {
   display: -webkit-box;
@@ -241,6 +241,7 @@ body .info1 {
           flex-direction: row;
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
+  margin-left: 1vh;
 }
 body .info1 img {
   -webkit-box-flex: 1;
