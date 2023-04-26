@@ -9,6 +9,9 @@ html{
     scroll-behavior: smooth;
 }
 .up{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     border:max(0.1vw,0.1vh) solid #C4C7C8;
     border-radius: max(1vw,1vh);
     width:20%;
@@ -22,7 +25,7 @@ html{
         transform:scale(1.1);
     }
     a{
-        font-size: max(3vw,3vh);
+        font-size: max(3vw,1.5vh);
         text-decoration: none;
         font-family: 'Times New Roman', Times, serif;
         color:white;

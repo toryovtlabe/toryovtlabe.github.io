@@ -11,6 +11,15 @@ html {
 }
 
 .up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: max(0.1vw, 0.1vh) solid #C4C7C8;
   border-radius: max(1vw, 1vh);
   width: 30%;
@@ -30,7 +39,7 @@ html {
           transform: scale(1.1);
 }
 .up a {
-  font-size: max(3vw, 3vh);
+  font-size: max(3vw, 1.5vh);
   text-decoration: none;
   font-family: "Times New Roman", Times, serif;
   color: white;
