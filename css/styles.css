@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
-body .preferences .m1, body .Service .line .m1, body .line1 form {
-  border: max(0.2vw, 0.2vh) solid #C4C7C8;
+body .preferences .m1, body .Service .line .m1, body .line1 form, body #formAlert .text {
+  border: max(0.2vw, 0.2vh) solid #c4c7c8;
   border-radius: max(1vw, 1vh);
 }
 
@@ -27,7 +27,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: max(0.2vw, 0.2vh) solid #C4C7C8;
+  border: max(0.2vw, 0.2vh) solid #c4c7c8;
   border-radius: max(1vw, 1vh);
   width: 20%;
   background-color: #979595;
@@ -104,7 +104,7 @@ html {
   }
   header nav .spisok {
     background-color: #807676;
-    border: max(0.2vw, 0.2vh) solid #C4C7C8;
+    border: max(0.2vw, 0.2vh) solid #c4c7c8;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -131,7 +131,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   background-color: #807676;
-  border: max(0.2vw, 0.2vh) solid #C4C7C8;
+  border: max(0.2vw, 0.2vh) solid #c4c7c8;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -215,10 +215,70 @@ body {
   background-color: #343434;
   font-family: "Raleway", sans-serif;
 }
+body #formAlert {
+  display: block;
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+}
+body #formAlert .text {
+  background-color: rgba(79, 75, 75, 0.9098039216);
+  width: 40%;
+  margin: auto;
+  color: white;
+  padding: 1.5%;
+}
+body #formAlert.show {
+  visibility: visible;
+  -webkit-animation: fade_in 0.5s linear, fade_out 0.5s 5s linear;
+          animation: fade_in 0.5s linear, fade_out 0.5s 5s linear;
+}
+@-webkit-keyframes fade_in {
+  from {
+    opacity: 0;
+    top: 0;
+  }
+  to {
+    opacity: 1;
+    top: 100px;
+  }
+}
+@keyframes fade_in {
+  from {
+    opacity: 0;
+    top: 0;
+  }
+  to {
+    opacity: 1;
+    top: 100px;
+  }
+}
+@-webkit-keyframes fade_out {
+  from {
+    opacity: 1;
+    top: 100px;
+  }
+  to {
+    opacity: 0;
+    top: 0;
+  }
+}
+@keyframes fade_out {
+  from {
+    opacity: 1;
+    top: 100px;
+  }
+  to {
+    opacity: 0;
+    top: 0;
+  }
+}
 body hr {
   margin: 10px auto 10px auto;
   width: 90%;
-  border-color: #C4C7C8;
+  border-color: #c4c7c8;
 }
 body .imgback {
   background: url("/img/img_1.png");
@@ -245,7 +305,7 @@ body .line1 .box1 {
 }
 body .line1 .box1 img {
   border-radius: max(1vw, 1vh);
-  width: max(30vw, 22vh);
+  width: max(30vw, 30vh);
 }
 body .line1 form {
   display: -webkit-box;
@@ -263,8 +323,8 @@ body .line1 form {
   color: white;
 }
 body .line1 form .name {
+  font-size: max(2vw, 2.5vh);
   text-align: center;
-  font-size: max(2vw, 1.5vh);
   margin-bottom: 1.5%;
   text-shadow: 0.05vw 0.05vw 0 black, -0.05vw -0.05vw 0 black, -0.05vw 0.05vw 0 black, 0.05vw -0.05vw 0 black;
 }
@@ -281,12 +341,13 @@ body .line1 form .fio, body .line1 form .tel, body .line1 form .com {
           justify-content: space-between;
 }
 body .line1 form .fio label, body .line1 form .tel label, body .line1 form .com label {
-  font-size: max(1.5vw, 1.3vh);
-  margin-right: 0.3vw;
+  font-size: max(2vw, 2.5vh);
+  margin-right: 5vw;
 }
 body .line1 form .fio input, body .line1 form .tel input, body .line1 form .com input {
-  width: 15vw;
-  height: 2vw;
+  width: max(15vw, 20vh);
+  height: max(2vw, 2.5vh);
+  margin: 2% 0;
 }
 body .line1 form .send {
   display: -webkit-box;
@@ -296,20 +357,20 @@ body .line1 form .send {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body .line1 form .send button {
+body .line1 form .send input {
   background-color: #9BC0F9;
   border-radius: 15px;
   padding: 1% 2%;
   border: 0.2vw solid #008FDF;
   width: 50%;
-  font-size: 2vw;
+  font-size: max(2vw, 2vh);
   -webkit-transition: border-color 0.4s, -webkit-transform 0.4s;
   transition: border-color 0.4s, -webkit-transform 0.4s;
   -o-transition: transform 0.4s, border-color 0.4s;
   transition: transform 0.4s, border-color 0.4s;
   transition: transform 0.4s, border-color 0.4s, -webkit-transform 0.4s;
 }
-body .line1 form .send button:hover {
+body .line1 form .send input:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
@@ -320,7 +381,7 @@ body h1 {
   font-weight: 700;
   text-align: center;
   margin: 1.5% auto 1.5% auto;
-  border: max(0.2vw, 0.2vh) solid #C4C7C8;
+  border: max(0.2vw, 0.2vh) solid #c4c7c8;
   background-color: #979595;
   border-radius: max(1vw, 1vh);
   color: white;
@@ -538,7 +599,7 @@ body footer {
   display: -ms-flexbox;
   display: flex;
   background-color: #807676;
-  border: max(0.2vw, 0.2vh) solid #C4C7C8;
+  border: max(0.2vw, 0.2vh) solid #c4c7c8;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

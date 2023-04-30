@@ -22,7 +22,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: max(0.2vw, 0.2vh) solid #C4C7C8;
+  border: max(0.2vw, 0.2vh) solid #c4c7c8;
   border-radius: max(1vw, 1vh);
   width: 20%;
   background-color: #979595;
@@ -99,7 +99,7 @@ html {
   }
   header nav .spisok {
     background-color: #807676;
-    border: max(0.2vw, 0.2vh) solid #C4C7C8;
+    border: max(0.2vw, 0.2vh) solid #c4c7c8;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -126,7 +126,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   background-color: #807676;
-  border: max(0.2vw, 0.2vh) solid #C4C7C8;
+  border: max(0.2vw, 0.2vh) solid #c4c7c8;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -213,7 +213,7 @@ body {
 body hr {
   margin: 10px auto 10px auto;
   width: 90%;
-  border-color: #C4C7C8;
+  border-color: #c4c7c8;
 }
 body .imgback {
   background: url("/img/img_13.jpeg");
@@ -227,7 +227,7 @@ body h1 {
   font-weight: 700;
   text-align: center;
   margin: 1.5% auto 1.5% auto;
-  border: max(0.2vw, 0.2vh) solid #C4C7C8;
+  border: max(0.2vw, 0.2vh) solid #c4c7c8;
   background-color: #979595;
   border-radius: max(1vw, 1vh);
   color: white;
@@ -261,7 +261,7 @@ body .info_about_school, body .info_about_lessons {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #232025;
+  background-color: rgba(8, 5, 28, 0.7058823529);
   border-radius: 15px;
   border: max(0.2vw, 0.2vh) solid #e41e1e;
 }
@@ -301,7 +301,7 @@ body footer {
   display: -ms-flexbox;
   display: flex;
   background-color: #807676;
-  border: max(0.2vw, 0.2vh) solid #C4C7C8;
+  border: max(0.2vw, 0.2vh) solid #c4c7c8;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

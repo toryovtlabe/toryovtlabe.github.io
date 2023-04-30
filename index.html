@@ -127,27 +127,40 @@
     </header>
 </head>
 <body>
+
+    <div id="formAlert">
+        <div class="text">
+            <p>Уважаемый <span id="user"></span>!</p>
+            <p>Ваше заявление отправлено!</p>
+            <p>Ожидайте звонка на Ваш телефон по номеру: <span id="userPhone"></span></p>
+        </div>
+    </div>
+
+
+
 <div class="imgback">
 </div>
 <div class="line1">
     <div class="box1"> 
         <img src="/img/img_4.jfif">
     </div>
-    <form method="post" action="#">
+    <form onsubmit="showSnackbar()">
         <p class="name">Записаться на обучение</p>
         <p class="fio">
             <label>ФИО</label>
-            <input type="text" name="username">
+            <input type="text" name="username" required>
         </p>
         <p class="tel">
             <label>Телефон</label>
-            <input type="text" name="telnumber">
+            <input type="tel" name="telnumber" required>
         </p>
         <p class="com">
             <label>Комментарии</label>
             <input type="text" name="comments">
         </p>
-        <div class="send"><button>Отправить</button></div>
+        <div class="send">
+            <input value="Отправить" type="button" id="formButton">
+        </div>
     </form>
 </div>
 <hr>

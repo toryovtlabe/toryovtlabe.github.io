@@ -2,6 +2,8 @@ $color_back: #343434;
 
 $lightgrey:#979595;
 
+$background_alert:#4f4b4be8;
+
 $lightblue:#9BC0F9;
 
 $blue:#008FDF;
@@ -12,8 +14,13 @@ $red:#e41e1e;
 
 $orange:#FC6A19;
 
+$almostblack:#08051cb4;
+
+$color_border:#c4c7c8;
+
+
 %borderstyles{
-    border:max(0.2vw,0.2vh) solid #C4C7C8;
+    border:max(0.2vw,0.2vh) solid $color_border;
     border-radius: max(1vw,1vh);
 }
 
@@ -29,7 +36,7 @@ $orange:#FC6A19;
 @mixin headerforpage{
     display:flex;
     background-color: #807676;
-    border:max(0.2vw,0.2vh) solid #C4C7C8;
+    border:max(0.2vw,0.2vh) solid $color_border;
     align-items: center;
     #burger{
         visibility: hidden;
@@ -96,7 +103,7 @@ $orange:#FC6A19;
     margin-top:0.15%;
     display:flex;
     background-color: #807676;
-    border:max(0.2vw,0.2vh) solid #C4C7C8;
+    border:max(0.2vw,0.2vh) solid $color_border;
     align-items: center;
     .LogoBox {
         display: flex;
@@ -167,7 +174,7 @@ $orange:#FC6A19;
     display:flex;
     justify-content: center;
     align-items: center;
-    border:max(0.2vw,0.2vh) solid #C4C7C8;
+    border:max(0.2vw,0.2vh) solid $color_border;
     border-radius: max(1vw,1vh);
     width: 20%;
     background-color: $lightgrey;
@@ -230,7 +237,7 @@ $orange:#FC6A19;
         nav{
             .spisok{ 
                 background-color: #807676;
-                border:max(0.2vw,0.2vh) solid #C4C7C8;
+                border:max(0.2vw,0.2vh) solid $color_border;
                 justify-content: center;
                 visibility: hidden;
                 position: absolute;
@@ -253,7 +260,7 @@ $orange:#FC6A19;
 @mixin forhr{
     margin:10px auto 10px auto;
     width:90%;
-    border-color:#C4C7C8;
+    border-color:$color_border;
 }
 
 @mixin forh1{
@@ -261,7 +268,7 @@ $orange:#FC6A19;
     font-weight:700;
     text-align: center;
     margin:1.5% auto 1.5% auto;
-    border:max(0.2vw,0.2vh) solid #C4C7C8;
+    border:max(0.2vw,0.2vh) solid $color_border;
     background-color:$lightgrey;
     border-radius: max(1vw,1vh);
     color:white;
