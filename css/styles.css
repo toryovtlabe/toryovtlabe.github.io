@@ -297,17 +297,17 @@ body .line1 form .send button {
   border: 0.2vw solid #008FDF;
   width: 50%;
   font-size: 2vw;
-  -webkit-transition: outline 0.4s, -webkit-transform 0.4s;
-  transition: outline 0.4s, -webkit-transform 0.4s;
-  -o-transition: transform 0.4s, outline 0.4s;
-  transition: transform 0.4s, outline 0.4s;
-  transition: transform 0.4s, outline 0.4s, -webkit-transform 0.4s;
+  -webkit-transition: border-color 0.4s, -webkit-transform 0.4s;
+  transition: border-color 0.4s, -webkit-transform 0.4s;
+  -o-transition: transform 0.4s, border-color 0.4s;
+  transition: transform 0.4s, border-color 0.4s;
+  transition: transform 0.4s, border-color 0.4s, -webkit-transform 0.4s;
 }
 body .line1 form .send button:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
-  outline: 0.2vw solid #100FDF;
+  border: 0.2vw solid lightgrey;
 }
 body h1 {
   font-family: "Raleway", sans-serif;
@@ -360,6 +360,7 @@ body .Service .line .m2 {
   margin-top: 1vh;
 }
 body .Service .line .m1 {
+  cursor: pointer;
   padding: 0 1%;
   -ms-flex-item-align: stretch;
       align-self: stretch;
@@ -380,19 +381,18 @@ body .Service .line .m1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  -o-transition: transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transition: border-color 0.4s, -webkit-transform 0.4s;
+  transition: border-color 0.4s, -webkit-transform 0.4s;
+  -o-transition: transform 0.4s, border-color 0.4s;
+  transition: transform 0.4s, border-color 0.4s;
+  transition: transform 0.4s, border-color 0.4s, -webkit-transform 0.4s;
 }
 body .Service .line .m1:hover {
-  outline: 0.3vw solid #E8BC69;
-  border: 0;
   background-color: #828080;
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
+  border: max(0.2vw, 0.2vh) solid #E8BC69;
 }
 body .Service .line .m1 .union .Category {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;

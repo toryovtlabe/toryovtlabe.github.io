@@ -233,11 +233,10 @@ body {
                     border:0.2vw solid #008FDF;
                     width:50%;
                     font-size:2vw;
-                    transition: transform 0.4s,outline 0.4s;
+                    transition: transform 0.4s,border-color 0.4s;
                     &:hover{
                         transform: scale(1.1);
-                        outline:0.2vw solid #100FDF;
-
+                        border:0.2vw solid lightgrey;
                     }
                 }
             }
@@ -283,6 +282,7 @@ body {
                 margin-top:1vh;
             }
             .m1{
+                cursor:pointer;
                 padding:0 1%;
                 align-self: stretch;
                 background-color:#979595;
@@ -292,13 +292,12 @@ body {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                transition: transform 0.2s;
                 &:hover{
-                    outline:0.3vw solid #E8BC69;
-                    border:0;
                     background-color: #828080;
                     transform: scale(1.1);
+                    border:max(0.2vw,0.2vh) solid #E8BC69; 
                 }
+                transition: transform 0.4s, border-color 0.4s;
                 .union{
                     .Category {
                         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
