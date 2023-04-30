@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+body .preferences .m1, body .Service .line .m1, body .line1 form {
+  border: max(0.2vw, 0.2vh) solid #C4C7C8;
+  border-radius: max(1vw, 1vh);
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-size: 32px;
 }
 
 html {
@@ -20,12 +24,13 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: max(0.1vw, 0.1vh) solid #C4C7C8;
+  border: max(0.2vw, 0.2vh) solid #C4C7C8;
   border-radius: max(1vw, 1vh);
   width: 20%;
   background-color: #979595;
   text-align: center;
   margin: auto;
+  margin-top: 2%;
   margin-bottom: 3%;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
@@ -96,7 +101,7 @@ html {
   }
   header nav .spisok {
     background-color: #807676;
-    border: solid #C1C1C1 3px;
+    border: max(0.2vw, 0.2vh) solid #C4C7C8;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -123,7 +128,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   background-color: #807676;
-  border: solid #C1C1C1 0.2vw;
+  border: max(0.2vw, 0.2vh) solid #C4C7C8;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -192,7 +197,7 @@ header .LogoBox .name {
   margin: auto;
 }
 header .LogoBox .name p {
-  text-shadow: 0.05vw 0.05vw 0 black, -0.05vw -0.05vw 0 black, -0.05vw 0.05vw 0 black, 0.05vw -0.05vw 0 black;
+  text-shadow: 0.1vw 0.1vw 0 black, -0.1vw -0.1vw 0 black, -0.1vw 0.1vw 0 black, 0.1vw -0.1vw 0 black;
   font-size: max(2vw, 2vh);
   text-align: center;
   color: #C1C1C1;
@@ -231,12 +236,12 @@ body .line1 {
       flex-wrap: wrap;
 }
 body .line1 .box1 {
-  border-radius: 15px;
+  border-radius: max(1vw, 1vh);
   max-width: 500px;
   padding: 0 5%;
 }
 body .line1 .box1 img {
-  border-radius: 15px;
+  border-radius: max(1vw, 1vh);
   width: max(30vw, 22vh);
 }
 body .line1 form {
@@ -247,9 +252,7 @@ body .line1 form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: max(0.2vw, 0.2vh) solid #C4C7C8;
-  border-radius: 15px;
-  background-color: #979795;
+  background-color: #979595;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -313,19 +316,19 @@ body h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   text-align: center;
-  margin: 0 auto 1.5% auto;
-  border: max(0.2vw, 0.2vh) #C4C7C8 solid;
+  margin: 1.5% auto 1.5% auto;
+  border: max(0.2vw, 0.2vh) solid #C4C7C8;
   background-color: #979595;
-  border-radius: 50px;
+  border-radius: max(1vw, 1vh);
   color: white;
   padding: 1% 0;
-  width: 60%;
-  font-size: max(3vw, 2.5vh);
+  width: max(25vw, 25vh);
+  font-size: max(2vw, 2vh);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  text-shadow: 0.1vw 0.1vw 0 black, -0.1vw -0.1vw 0 black, -0.1vw 0.1vw 0 black, 0.1vw -0.1vw 0 black;
+  text-shadow: 0.05vw 0.05vw 0 black, -0.05vw -0.05vw 0 black, -0.05vw 0.05vw 0 black, 0.05vw -0.05vw 0 black;
 }
 body .Service .line {
   display: -webkit-box;
@@ -365,8 +368,6 @@ body .Service .line .m1 {
   -ms-flex-item-align: stretch;
       align-self: stretch;
   background-color: #979595;
-  border: max(0.2vw, 0.2vh) solid #C4C7C8;
-  border-radius: 10px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -454,8 +455,6 @@ body .preferences .img img {
 body .preferences .m1 {
   justify-self: center;
   background-color: #979595;
-  border: max(0.2vw, 0.2vh) solid #C4C7C8;
-  border-radius: 10px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -526,7 +525,7 @@ body .Gallery .photo {
           flex: 1 1 0;
 }
 body .Gallery .photo img {
-  border: max(0.2vw, 0.3vh) solid gray;
+  border: max(0.2vw, 0.3vh) solid grey;
   width: 100%;
   height: 90%;
 }
@@ -536,7 +535,7 @@ body footer {
   display: -ms-flexbox;
   display: flex;
   background-color: #807676;
-  border: solid #C1C1C1 0.2vw;
+  border: max(0.2vw, 0.2vh) solid #C4C7C8;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -610,7 +609,7 @@ body footer .menu a:hover img {
 }
 body footer .menu p {
   font-weight: 700;
-  text-shadow: 0.05vw 0.05vw 0 black, -0.05vw -0.05vw 0 black, -0.05vw 0.05vw 0 black, 0.05vw -0.05vw 0 black;
+  text-shadow: 0.1vw 0.1vw 0 black, -0.1vw -0.1vw 0 black, -0.1vw 0.1vw 0 black, 0.1vw -0.1vw 0 black;
   color: white;
   font-size: max(2vw, 1.5vh);
 }
@@ -622,7 +621,7 @@ body footer .number {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-shadow: 0.05vw 0.05vw 0 black, -0.05vw -0.05vw 0 black, -0.05vw 0.05vw 0 black, 0.05vw -0.05vw 0 black;
+  text-shadow: 0.1vw 0.1vw 0 black, -0.1vw -0.1vw 0 black, -0.1vw 0.1vw 0 black, 0.1vw -0.1vw 0 black;
 }
 body footer .number img {
   width: max(4vw, 3vh);

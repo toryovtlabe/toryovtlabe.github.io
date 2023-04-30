@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+body form, body .contact_info {
+  border: max(0.2vw, 0.2vh) solid #C4C7C8;
+  border-radius: max(1vw, 1vh);
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-size: 32px;
 }
 
 html {
@@ -20,12 +24,13 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: max(0.1vw, 0.1vh) solid #C4C7C8;
+  border: max(0.2vw, 0.2vh) solid #C4C7C8;
   border-radius: max(1vw, 1vh);
-  width: 15%;
+  width: 20%;
   background-color: #979595;
   text-align: center;
   margin: auto;
+  margin-top: 2%;
   margin-bottom: 3%;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
@@ -96,7 +101,7 @@ html {
   }
   header nav .spisok {
     background-color: #807676;
-    border: solid #C1C1C1 3px;
+    border: max(0.2vw, 0.2vh) solid #C4C7C8;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -123,7 +128,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   background-color: #807676;
-  border: solid #C1C1C1 0.2vw;
+  border: max(0.2vw, 0.2vh) solid #C4C7C8;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -192,7 +197,7 @@ header .LogoBox .name {
   margin: auto;
 }
 header .LogoBox .name p {
-  text-shadow: 0.05vw 0.05vw 0 black, -0.05vw -0.05vw 0 black, -0.05vw 0.05vw 0 black, 0.05vw -0.05vw 0 black;
+  text-shadow: 0.1vw 0.1vw 0 black, -0.1vw -0.1vw 0 black, -0.1vw 0.1vw 0 black, 0.1vw -0.1vw 0 black;
   font-size: max(2vw, 2vh);
   text-align: center;
   color: #C1C1C1;
@@ -208,7 +213,7 @@ body {
   font-family: "Raleway", sans-serif;
 }
 body hr {
-  margin: max(3vh, 1.5vw) auto;
+  margin: 10px auto 10px auto;
   width: 90%;
   border-color: #C4C7C8;
 }
@@ -223,22 +228,24 @@ body h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   text-align: center;
-  margin: 0 auto 1.5% auto;
-  border: max(0.2vw, 0.2vh) #C4C7C8 solid;
+  margin: 1.5% auto 1.5% auto;
+  border: max(0.2vw, 0.2vh) solid #C4C7C8;
   background-color: #979595;
-  border-radius: 50px;
+  border-radius: max(1vw, 1vh);
   color: white;
   padding: 1% 0;
-  width: 60%;
+  width: max(25vw, 25vh);
   font-size: max(2vw, 2vh);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  text-shadow: 0.1vw 0.1vw 0 black, -0.1vw -0.1vw 0 black, -0.1vw 0.1vw 0 black, 0.1vw -0.1vw 0 black;
+  text-shadow: 0.05vw 0.05vw 0 black, -0.05vw -0.05vw 0 black, -0.05vw 0.05vw 0 black, 0.05vw -0.05vw 0 black;
+}
+body h1.head {
+  width: 30%;
   margin-top: -35%;
-  width: 35%;
-  margin-bottom: 30vw;
+  margin-bottom: 30.3%;
 }
 body .contact_info {
   width: 500px;
@@ -254,7 +261,6 @@ body .contact_info {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border-radius: 15px;
-  border: max(0.2vw, 0.2vh) solid #C4C7C8;
   margin-bottom: max(3vh, 7vw);
 }
 body .contact_info .text {
@@ -282,12 +288,12 @@ body .contact_info .text li span {
   color: white;
 }
 body form {
-  border: max(0.1vw, 0.1vh) solid #C4C7C8;
   background-color: #D9D9D9;
   border-radius: 10px;
   width: max(80vw, 45vh);
   margin: auto;
   margin-bottom: 3%;
+  margin-top: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,7 +379,7 @@ body form .right button:hover {
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-body #map {
+body .map {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,8 +387,9 @@ body #map {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 2%;
 }
-body #map iframe {
+body .map iframe {
   width: 700px;
   height: 400px;
 }
@@ -392,7 +399,7 @@ body footer {
   display: -ms-flexbox;
   display: flex;
   background-color: #807676;
-  border: solid #C1C1C1 0.2vw;
+  border: max(0.2vw, 0.2vh) solid #C4C7C8;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -466,7 +473,7 @@ body footer .menu a:hover img {
 }
 body footer .menu p {
   font-weight: 700;
-  text-shadow: 0.05vw 0.05vw 0 black, -0.05vw -0.05vw 0 black, -0.05vw 0.05vw 0 black, 0.05vw -0.05vw 0 black;
+  text-shadow: 0.1vw 0.1vw 0 black, -0.1vw -0.1vw 0 black, -0.1vw 0.1vw 0 black, 0.1vw -0.1vw 0 black;
   color: white;
   font-size: max(2vw, 1.5vh);
 }
@@ -478,7 +485,7 @@ body footer .number {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-shadow: 0.05vw 0.05vw 0 black, -0.05vw -0.05vw 0 black, -0.05vw 0.05vw 0 black, 0.05vw -0.05vw 0 black;
+  text-shadow: 0.1vw 0.1vw 0 black, -0.1vw -0.1vw 0 black, -0.1vw 0.1vw 0 black, 0.1vw -0.1vw 0 black;
 }
 body footer .number img {
   width: max(4vw, 3vh);
