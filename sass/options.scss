@@ -21,6 +21,9 @@ $orange:#FC6A19;
 @mixin globalparm{
     margin:0;
     padding:0;
+    span{
+        font-family: 'Times New Roman', Times, serif;
+    }
 }
 
 @mixin headerforpage{
@@ -141,10 +144,6 @@ $orange:#FC6A19;
         }
         p{
             font-weight:700;
-            text-shadow:0.1vw 0.1vw 0 black,
-                        -0.1vw -0.1vw 0 black,
-                        -0.1vw 0.1vw 0 black,
-                        0.1vw -0.1vw 0 black;
             color:white;
             font-size: max(2vw,1.5vh);
         }
@@ -153,16 +152,11 @@ $orange:#FC6A19;
             width:100%;
             display:flex;
             align-items: center;
-            text-shadow:0.1vw 0.1vw 0 black,
-                        -0.1vw -0.1vw 0 black,
-                        -0.1vw 0.1vw 0 black,
-                        0.1vw -0.1vw 0 black;
             img{
                 width:max(4vw,3vh);
             }
             a{
                 color:white;
-                font-family:'Times New Roman', Times, serif;
                 font-size: max(3vw,1vh);
                 text-decoration: none;
             }

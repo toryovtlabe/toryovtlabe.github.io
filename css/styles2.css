@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
 }
+* span {
+  font-family: "Times New Roman", Times, serif;
+}
 
 html {
   scroll-behavior: smooth;
@@ -372,7 +375,6 @@ body footer .menu a:hover img {
 }
 body footer .menu p {
   font-weight: 700;
-  text-shadow: 0.1vw 0.1vw 0 black, -0.1vw -0.1vw 0 black, -0.1vw 0.1vw 0 black, 0.1vw -0.1vw 0 black;
   color: white;
   font-size: max(2vw, 1.5vh);
 }
@@ -384,14 +386,12 @@ body footer .number {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-shadow: 0.1vw 0.1vw 0 black, -0.1vw -0.1vw 0 black, -0.1vw 0.1vw 0 black, 0.1vw -0.1vw 0 black;
 }
 body footer .number img {
   width: max(4vw, 3vh);
 }
 body footer .number a {
   color: white;
-  font-family: "Times New Roman", Times, serif;
   font-size: max(3vw, 1vh);
   text-decoration: none;
 }
