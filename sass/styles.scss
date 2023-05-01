@@ -78,7 +78,7 @@ body {
         justify-content: center;
         margin-top: -18%;
         display:flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         .box1 {
             border-radius: max(1vw,1vh);
             max-width: 500px;
