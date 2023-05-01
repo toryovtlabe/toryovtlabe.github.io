@@ -17,6 +17,52 @@ header{
     @include headerforpage;
 }
 body {
+
+    #formAlert {
+        display: block;
+        position: fixed;
+        top: 100px;
+        width: 100%;
+        text-align: center;
+        .text{
+            @extend %borderstyles;
+            background-color: $background_alert;
+            width:40%;
+            margin:auto;
+            color:white;
+            padding: 1.5%;
+        }
+        visibility: hidden;
+    }
+
+    #formAlert.show {
+        visibility: visible;
+        animation: fade_in 0.5s linear, fade_out 0.5s 5s linear;
+    }
+
+    @keyframes fade_in {
+        from {
+            opacity: 0;
+            top: 0;
+        }
+        to {
+            opacity: 1;
+            top: 100px;
+        }
+    }
+
+    @keyframes fade_out {
+        from {
+            opacity: 1;
+            top: 100px;
+        }
+        to {
+            opacity: 0;
+            top: 0;
+        }
+    }
+
+    
     background-color: $color_back;
     font-family: 'Raleway', sans-serif;
     hr{
@@ -122,7 +168,7 @@ body {
                 width:4vw;
                 margin-bottom: -3.5%;
             }
-            button{
+            .send{
                 font-size:max(2vw,1.4vh);
                 padding:0.5vw;
                 margin-top:2%;

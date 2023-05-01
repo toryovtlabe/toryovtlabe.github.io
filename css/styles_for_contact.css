@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
-body form, body .contact_info {
+body form, body .contact_info, body #formAlert .text {
   border: max(0.2vw, 0.2vh) solid #c4c7c8;
   border-radius: max(1vw, 1vh);
 }
@@ -215,6 +215,66 @@ body {
   background-color: #343434;
   font-family: "Raleway", sans-serif;
 }
+body #formAlert {
+  display: block;
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+}
+body #formAlert .text {
+  background-color: rgba(79, 75, 75, 0.9098039216);
+  width: 40%;
+  margin: auto;
+  color: white;
+  padding: 1.5%;
+}
+body #formAlert.show {
+  visibility: visible;
+  -webkit-animation: fade_in 0.5s linear, fade_out 0.5s 5s linear;
+          animation: fade_in 0.5s linear, fade_out 0.5s 5s linear;
+}
+@-webkit-keyframes fade_in {
+  from {
+    opacity: 0;
+    top: 0;
+  }
+  to {
+    opacity: 1;
+    top: 100px;
+  }
+}
+@keyframes fade_in {
+  from {
+    opacity: 0;
+    top: 0;
+  }
+  to {
+    opacity: 1;
+    top: 100px;
+  }
+}
+@-webkit-keyframes fade_out {
+  from {
+    opacity: 1;
+    top: 100px;
+  }
+  to {
+    opacity: 0;
+    top: 0;
+  }
+}
+@keyframes fade_out {
+  from {
+    opacity: 1;
+    top: 100px;
+  }
+  to {
+    opacity: 0;
+    top: 0;
+  }
+}
 body hr {
   margin: 10px auto 10px auto;
   width: 90%;
@@ -360,7 +420,7 @@ body form .right .phonepic {
   width: 4vw;
   margin-bottom: -3.5%;
 }
-body form .right button {
+body form .right .send {
   font-size: max(2vw, 1.4vh);
   padding: 0.5vw;
   margin-top: 2%;
@@ -376,7 +436,7 @@ body form .right button {
   transition: transform 0.4s, border-color 0.4s;
   transition: transform 0.4s, border-color 0.4s, -webkit-transform 0.4s;
 }
-body form .right button:hover {
+body form .right .send:hover {
   border-color: white;
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);

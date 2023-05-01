@@ -9,6 +9,7 @@ html{
 }
 .up{
     @include forup;
+    width:17%;
 }
 @media (max-width:720px){
     @include formediacall;

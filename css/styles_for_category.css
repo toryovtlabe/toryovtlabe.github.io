@@ -29,7 +29,7 @@ html {
           align-items: center;
   border: max(0.2vw, 0.2vh) solid #c4c7c8;
   border-radius: max(1vw, 1vh);
-  width: 20%;
+  width: 10%;
   background-color: #979595;
   text-align: center;
   margin: auto;
@@ -40,6 +40,7 @@ html {
   -o-transition: transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
+  width: 17%;
 }
 .up:hover {
   -webkit-transform: scale(1.1);
