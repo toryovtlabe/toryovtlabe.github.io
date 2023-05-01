@@ -112,7 +112,7 @@
                         <a href="/index.html">Главная</a>
                     </li>
                     <li>
-                        <a href="#categories">Услуги</a>
+                        <a href="/index.html#categories">Услуги</a>
                     </li>
                     <li>
                         <a href="/about_company.html" class="company">О компании</a>
@@ -174,52 +174,52 @@
     
     <div class="Service">
         <div class="line">
-            <div class="m1" onclick="document.location='/categoryA.html'">
+            <div class="m1" onclick="handleClick(1)">
                     <div class="union">
                     <p class="Category">A</p>
                     <p>Категория А</p>
                 </div>
-                <p class="more"><a href="/categoryA.html">подробнее..</a></p>
+                <p class="more"><a>подробнее..</a></p>
             </div>   
-            <div class="m1" onclick="document.location='/categoryB.html'">
+            <div class="m1" onclick="handleClick(2)">
                     <div class="union">
                     <p class="Category">B</p>
                     <p>Категория B</p>
                 </div>
-                <p class="more"><a href="/categoryB.html">подробнее..</a></p>
+                <p class="more"><a>подробнее..</a></p>
             </div>
-            <div class="m1" onclick="document.location='/categoryBE.html'">
+            <div class="m1" onclick="handleClick(3)">
                 <div class="union">
                     <p class="Category">BE</p>
                     <p>Категория BE</p>
                 </div>
-                <p class="more"><a href="/categoryBE.html">подробнее..</a></p>
+                <p class="more"><a>подробнее..</a></p>
             </div>
-            <div class="m1" onclick="document.location='/categoryC.html'">
+            <div class="m1" onclick="handleClick(4)">
                 <div class="union">
                     <p class="Category">C</p>
                     <p>Категория C</p>
                 </div>
-                <p class="more"><a href="/categoryC.html">подробнее..</a></p>
+                <p class="more"><a>подробнее..</a></p>
             </div>
         </div>
         <div class="line">
             <div class="m2">
                 <img src="/img2/car4.png" alt="image loading error..">
             </div>
-            <div class="m1" onclick="document.location='/categoryCE.html'">
+            <div class="m1" onclick="handleClick(5)">
                 <div class="union">
                     <p class="Category">CE</p>
                     <p>Категория CE</p>
                 </div>
-                <p class="more"><a href="/categoryCE.html">подробнее..</a></p>
+                <p class="more"><a>подробнее..</a></p>
             </div>
-            <div class="m1" onclick="document.location='/categoryD.html'">
+            <div class="m1" onclick="handleClick(6)">
                 <div class="union">
                     <p class="Category">D</p>
                     <p>Категория D</p>
                 </div>
-                <p class="more"><a href="/categoryD.html">подробнее..</a></p>
+                <p class="more"><a>подробнее..</a></p>
             </div>
             <div class="m2">
                 <img src="/img2/car4.png" alt="image loading error..">
@@ -376,6 +376,11 @@
             <a href="tel:+3753333728074">МТС: <span>+375(33)372-80-74</span></a>
         </div>
     </footer>
+<script>
+    function handleClick(buttonId) {
+        window.location.href = "/category.html?id=" + buttonId;
+    }
+</script>
 <script src="/form_index.js"></script>
 </body>
 </html>
