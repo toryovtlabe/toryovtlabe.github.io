@@ -555,7 +555,7 @@ body .preferences .m1 .fortext {
       -ms-flex-align: center;
           align-items: center;
 }
-body .preferences .m1 .fortext img {
+body .preferences .m1 .fortext .img {
   margin-right: 1%;
   margin-left: 1%;
   width: 5%;
