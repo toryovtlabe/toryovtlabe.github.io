@@ -95,25 +95,25 @@ body {
         .text{
             width:96%;
             padding:1%;
-            font-size:20px;
+            font-size:19.5px;
             text-align:left;
             color:white;
             span{
                 font-family: 'Times New Roman', Times, serif;
-                font-size:20px;
+                font-size:19.5px;
                 color:white;
             }
-        }
-        .text li{
-            width:96%;
-            list-style-position: inside;
-            font-size:20px;
-            text-align:left;
-            color:white;
-            span{
-                font-family: 'Times New Roman', Times, serif;
-                font-size:20px;
+            li{
+                width:96%;
+                list-style-position: inside;
+                font-size:19.5px;
+                text-align:left;
                 color:white;
+                span{
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size:19.5px;
+                    color:white;
+                }
             }
         }
     }
