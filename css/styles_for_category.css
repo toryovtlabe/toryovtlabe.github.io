@@ -213,6 +213,10 @@ header .LogoBox .name p {
 }
 
 body {
+  background-image: url(/img/backgr.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   background-color: #343434;
   font-family: "Raleway", sans-serif;
 }

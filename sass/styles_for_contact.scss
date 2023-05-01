@@ -17,6 +17,11 @@ header{
     @include headerforpage;
 }
 body {
+    
+    background-image: url(/img/backgr.jpg);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-attachment: fixed;
 
     #formAlert {
         display: block;

@@ -17,7 +17,13 @@ header{
     @include headerforpage;
 }
 body {
+
+    background-image: url(/img/backgr.jpg);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-attachment: fixed;
     background-color: $color_back;
+
     font-family: 'Raleway', sans-serif;
     hr{
         @include forhr
@@ -46,9 +52,9 @@ body {
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        background-color: $almostblack;
+        background-color: $lightergrey;
         border-radius: 15px;
-        border: max(0.2vw,0.2vh) solid $red;
+        border: max(0.2vw,0.2vh) solid $lightgrey;
         .text {
             width:96%;
             padding:1%;

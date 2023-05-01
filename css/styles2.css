@@ -207,6 +207,10 @@ header .LogoBox .name p {
 }
 
 body {
+  background-image: url(/img/backgr.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   background-color: #343434;
   font-family: "Raleway", sans-serif;
 }
@@ -261,9 +265,9 @@ body .info_about_school, body .info_about_lessons {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: rgba(8, 5, 28, 0.7058823529);
+  background-color: rgba(93, 92, 97, 0.568627451);
   border-radius: 15px;
-  border: max(0.2vw, 0.2vh) solid #e41e1e;
+  border: max(0.2vw, 0.2vh) solid #979595;
 }
 body .info_about_school .text, body .info_about_lessons .text {
   width: 96%;
