@@ -39,6 +39,7 @@ $lightergrey:#5d5c6191;
     background-color: #807676;
     border:max(0.2vw,0.2vh) solid $color_border;
     align-items: center;
+    user-select: none;
     #burger{
         visibility: hidden;
     }
