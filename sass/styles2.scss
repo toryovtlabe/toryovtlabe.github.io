@@ -24,6 +24,7 @@ body {
     background-attachment: fixed;
     background-color: $color_back;
     font-family: 'Raleway', sans-serif;
+    background-size:cover;
     hr{
         @include forhr
     }

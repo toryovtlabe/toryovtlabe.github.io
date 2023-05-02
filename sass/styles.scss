@@ -21,6 +21,7 @@ body {
     background-repeat: no-repeat;
     background-position:center center;
     background-attachment: fixed;
+    background-size:cover;
     #formAlert {
         display: block;
         position: fixed;
@@ -254,7 +255,7 @@ body {
                 a {
                     font-size: 2.5vw;
                     text-decoration: none;
-                    color: #5F5757;
+                    color: $lightgrey;
                     &:hover {
                         color: lightgrey;
                     }

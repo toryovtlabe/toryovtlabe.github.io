@@ -45,6 +45,9 @@ $lightergrey:#5d5c6191;
     }
     label{
         visibility: hidden;
+        img{
+            display:none;
+        }
     }
     nav{
         width:100%;
@@ -73,6 +76,7 @@ $lightergrey:#5d5c6191;
         width:100%;
     }
     .LogoBox {
+        padding:1%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -178,7 +182,7 @@ $lightergrey:#5d5c6191;
     align-items: center;
     border:max(0.2vw,0.2vh) solid $color_border;
     border-radius: max(1vw,1vh);
-    width: max(10vw,10vh);
+    width: max(12vw,12vh);
     background-color: $lightgrey;
     text-align: center;
     margin:auto;
@@ -224,13 +228,16 @@ $lightergrey:#5d5c6191;
             }
         }
         label[for=burger]{
-            flex: 0 0 1%;
+            flex: 0 0 10%;
             visibility: visible;
             user-select: none;
-            font-size: 5vh;
-            color:white;
+            img{
+                width:100%;
+                display:block;
+            }
             cursor:pointer;
-            margin-right: 2%;
+            margin-right: 5%;
+            margin-top:-1%;
         }
         nav{
             .spisok{ 
@@ -243,9 +250,9 @@ $lightergrey:#5d5c6191;
                 li {
                     text-align: center;
                     display: none;
-                    padding:2%;
+                    padding:10% 2%;
                     a{
-                        font-size: 3vw;
+                        font-size: 5vw;
                         visibility: hidden;
                         user-select: none;
                     }

@@ -24,7 +24,7 @@ html {
           align-items: center;
   border: max(0.2vw, 0.2vh) solid #c4c7c8;
   border-radius: max(1vw, 1vh);
-  width: max(10vw, 10vh);
+  width: max(12vw, 12vh);
   background-color: rgba(151, 149, 149, 0.5019607843);
   text-align: center;
   margin: auto;
@@ -84,17 +84,20 @@ html {
   }
   header label[for=burger] {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 1%;
-            flex: 0 0 1%;
+        -ms-flex: 0 0 10%;
+            flex: 0 0 10%;
     visibility: visible;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    font-size: 5vh;
-    color: white;
     cursor: pointer;
-    margin-right: 2%;
+    margin-right: 5%;
+    margin-top: -1%;
+  }
+  header label[for=burger] img {
+    width: 100%;
+    display: block;
   }
   header nav .spisok {
     background-color: #807676;
@@ -109,10 +112,10 @@ html {
   header nav .spisok li {
     text-align: center;
     display: none;
-    padding: 2%;
+    padding: 10% 2%;
   }
   header nav .spisok li a {
-    font-size: 3vw;
+    font-size: 5vw;
     visibility: hidden;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -138,6 +141,9 @@ header #burger {
 }
 header label {
   visibility: hidden;
+}
+header label img {
+  display: none;
 }
 header nav {
   width: 100%;
@@ -171,6 +177,7 @@ header .menu {
   width: 100%;
 }
 header .LogoBox {
+  padding: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,6 +221,7 @@ body {
   background-attachment: fixed;
   background-color: #343434;
   font-family: "Raleway", sans-serif;
+  background-size: cover;
 }
 body hr {
   margin: 10px auto 10px auto;
