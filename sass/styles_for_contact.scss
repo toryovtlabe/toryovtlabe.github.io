@@ -78,14 +78,14 @@ body {
         background-position:center center;
         background-size:cover;
         width:100%;
-        height:calc(65vw/16*9);
+        height:calc(70vw/16*9);
     }
     h1{
         @include forh1;
         &.head{
             width:30%;
-            margin-top:-35%;
-            margin-bottom:30.3%;
+            margin-top:-38%;
+            margin-bottom:33.3%;
         }
     }
     .contact_info{
