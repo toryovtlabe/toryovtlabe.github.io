@@ -23,7 +23,6 @@ body {
     background-position:center center;
     background-attachment: fixed;
     background-color: $color_back;
-
     font-family: 'Raleway', sans-serif;
     hr{
         @include forhr
@@ -33,7 +32,7 @@ body {
         background-position:center center;
         background-size:cover;
         width:100%;
-        height:calc(100vw/16*9);
+        height:calc(80vw/16*9);
     }
     h1{
         @include forh1;

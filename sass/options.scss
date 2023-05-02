@@ -1,6 +1,6 @@
 $color_back: #343434;
 
-$lightgrey:#979595;
+$lightgrey:#97959580;
 
 $background_alert:#4f4b4be8;
 
@@ -37,7 +37,7 @@ $lightergrey:#5d5c6191;
 @mixin headerforpage{
     display:flex;
     background-color: #807676;
-    border:max(0.2vw,0.2vh) solid $color_border;
+    // border:max(0.2vw,0.2vh) solid $color_border;
     align-items: center;
     user-select: none;
     #burger{
@@ -86,10 +86,10 @@ $lightergrey:#5d5c6191;
         .name {
             p
             {
-                text-shadow:0.1vw 0.1vw 0 black,
-                        -0.1vw -0.1vw 0 black,
-                        -0.1vw 0.1vw 0 black,
-                        0.1vw -0.1vw 0 black;
+                // text-shadow:0.1vw 0.1vw 0 black,
+                //         -0.1vw -0.1vw 0 black,
+                //         -0.1vw 0.1vw 0 black,
+                //         0.1vw -0.1vw 0 black;
                 font-size:max(2vw,2vh);
                 text-align:center;
                 color:#C1C1C1;
@@ -105,7 +105,7 @@ $lightergrey:#5d5c6191;
     margin-top:0.15%;
     display:flex;
     background-color: #807676;
-    border:max(0.2vw,0.2vh) solid $color_border;
+    // border:max(0.2vw,0.2vh) solid $color_border;
     align-items: center;
     .LogoBox {
         display: flex;
@@ -127,10 +127,10 @@ $lightergrey:#5d5c6191;
                 color:#C1C1C1;
                 font-family: 'Questrial', sans-serif;
                 user-select: none;
-                text-shadow:0.1vw 0.1vw 0 black,
-                        -0.1vw -0.1vw 0 black,
-                        -0.1vw 0.1vw 0 black,
-                        0.1vw -0.1vw 0 black;
+                // text-shadow:0.1vw 0.1vw 0 black,
+                //         -0.1vw -0.1vw 0 black,
+                //         -0.1vw 0.1vw 0 black,
+                //         0.1vw -0.1vw 0 black;
             }
             margin:auto;
         }
@@ -178,7 +178,7 @@ $lightergrey:#5d5c6191;
     align-items: center;
     border:max(0.2vw,0.2vh) solid $color_border;
     border-radius: max(1vw,1vh);
-    width: 10%;
+    width: max(10vw,10vh);
     background-color: $lightgrey;
     text-align: center;
     margin:auto;
@@ -193,10 +193,6 @@ $lightergrey:#5d5c6191;
         text-decoration: none;
         font-family: 'Times New Roman', Times, serif;
         color:white;
-        text-shadow:0.05vw 0.05vw 0 black,
-                        -0.05vw -0.05vw 0 black,
-                        -0.05vw 0.05vw 0 black,
-                        0.05vw -0.05vw 0 black;
     }
 }
 
@@ -278,8 +274,4 @@ $lightergrey:#5d5c6191;
     width:max(25vw,25vh);
     font-size: max(2vw,2vh);
     user-select: none;
-    text-shadow:0.05vw 0.05vw 0 black,
-                    -0.05vw -0.05vw 0 black,
-                    -0.05vw 0.05vw 0 black,
-                    0.05vw -0.05vw 0 black;
 }

@@ -186,17 +186,22 @@ body {
                     background-color: #828080;
                     transform: scale(1.1);
                     border:max(0.2vw,0.2vh) solid $lightorange; 
+                    .more {
+                        a{
+                            color:lightgrey;
+                        }
+                    }
                 }
-                transition: transform 0.4s, border-color 0.4s;
+                transition: transform 0.4s, border-color 0.4s, background-color 0.4s;
                 .union{
                     .Category {
                         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                         font-size:10vw;
                         color:white;
-                        text-shadow:0.1vw 0.1vw 0 black,
-                        -0.1vw -0.1vw 0 black,
-                        -0.1vw 0.1vw 0 black,
-                        0.1vw -0.1vw 0 black;
+                        // text-shadow:0.1vw 0.1vw 0 black,
+                        // -0.1vw -0.1vw 0 black,
+                        // -0.1vw 0.1vw 0 black,
+                        // 0.1vw -0.1vw 0 black;
                     }
                     .Category + p {
                         font-size: max(2.5vw,1.4vh);
@@ -208,11 +213,7 @@ body {
                     a {
                         font-size: 2.5vw;
                         text-decoration: none;
-                        color: #5F5757;
-                        &:hover {
-                            color: lightgrey;
-                        }
-                        transition: color 0.4s;
+                        color:$lightgrey;
                     }
                 }
             }

@@ -24,8 +24,8 @@ html {
           align-items: center;
   border: max(0.2vw, 0.2vh) solid #c4c7c8;
   border-radius: max(1vw, 1vh);
-  width: 10%;
-  background-color: #979595;
+  width: max(10vw, 10vh);
+  background-color: rgba(151, 149, 149, 0.5019607843);
   text-align: center;
   margin: auto;
   margin-top: 2%;
@@ -46,7 +46,6 @@ html {
   text-decoration: none;
   font-family: "Times New Roman", Times, serif;
   color: white;
-  text-shadow: 0.05vw 0.05vw 0 black, -0.05vw -0.05vw 0 black, -0.05vw 0.05vw 0 black, 0.05vw -0.05vw 0 black;
 }
 
 @media (max-width: 720px) {
@@ -126,7 +125,6 @@ header {
   display: -ms-flexbox;
   display: flex;
   background-color: #807676;
-  border: max(0.2vw, 0.2vh) solid #c4c7c8;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -199,7 +197,6 @@ header .LogoBox .name {
   margin: auto;
 }
 header .LogoBox .name p {
-  text-shadow: 0.1vw 0.1vw 0 black, -0.1vw -0.1vw 0 black, -0.1vw 0.1vw 0 black, 0.1vw -0.1vw 0 black;
   font-size: max(2vw, 2vh);
   text-align: center;
   color: #C1C1C1;
@@ -229,7 +226,7 @@ body h1 {
   text-align: center;
   margin: 1.5% auto 1.5% auto;
   border: max(0.2vw, 0.2vh) solid #c4c7c8;
-  background-color: #979595;
+  background-color: rgba(151, 149, 149, 0.5019607843);
   border-radius: max(1vw, 1vh);
   color: white;
   padding: 1% 0;
@@ -239,7 +236,6 @@ body h1 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  text-shadow: 0.05vw 0.05vw 0 black, -0.05vw -0.05vw 0 black, -0.05vw 0.05vw 0 black, 0.05vw -0.05vw 0 black;
 }
 body .info1 {
   display: -webkit-box;
@@ -330,7 +326,6 @@ body footer {
   display: -ms-flexbox;
   display: flex;
   background-color: #807676;
-  border: max(0.2vw, 0.2vh) solid #c4c7c8;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -372,7 +367,6 @@ body footer .LogoBox .name p {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  text-shadow: 0.1vw 0.1vw 0 black, -0.1vw -0.1vw 0 black, -0.1vw 0.1vw 0 black, 0.1vw -0.1vw 0 black;
 }
 body footer .menu {
   width: 100%;
