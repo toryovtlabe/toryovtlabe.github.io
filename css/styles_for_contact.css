@@ -196,6 +196,7 @@ header .LogoBox {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 header .LogoBox .logo {
   display: -webkit-box;
