@@ -16,6 +16,7 @@ html{
 }
 header{
     @include headerforpage;
+    background: linear-gradient(transparent 2.5vw, black);
 }
 body {
     background-image: url(/img/backgr.jpg);
@@ -94,5 +95,6 @@ body {
     }
     footer{
         @include footerforpage;
+        background: linear-gradient(black,transparent 5vw);
     }
 }

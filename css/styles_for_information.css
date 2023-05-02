@@ -100,7 +100,7 @@ html {
     display: block;
   }
   header nav .spisok {
-    background-color: #807676;
+    background-color: black;
     border: max(0.2vw, 0.2vh) solid #c4c7c8;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -127,7 +127,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #807676;
+  background-color: rgba(0, 0, 0, 0.493);
+  border-bottom: max(0.1vw, 0.1vh) solid #c4c7c8;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -135,6 +136,9 @@ header {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2.5vw, transparent), to(black));
+  background: -o-linear-gradient(transparent 2.5vw, black);
+  background: linear-gradient(transparent 2.5vw, black);
 }
 header #burger {
   visibility: hidden;
@@ -333,15 +337,20 @@ body footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #807676;
+  background-color: rgba(0, 0, 0, 0.493);
+  border-top: max(0.1vw, 0.1vh) solid #c4c7c8;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(5vw, transparent));
+  background: -o-linear-gradient(black, transparent 5vw);
+  background: linear-gradient(black, transparent 5vw);
 }
 body footer .LogoBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 1%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

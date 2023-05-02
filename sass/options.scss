@@ -36,8 +36,8 @@ $lightergrey:#5d5c6191;
 
 @mixin headerforpage{
     display:flex;
-    background-color: #807676;
-    // border:max(0.2vw,0.2vh) solid $color_border;
+    background-color: rgba(0, 0, 0, 0.493);
+    border-bottom:max(0.1vw,0.1vh) solid $color_border;
     align-items: center;
     user-select: none;
     #burger{
@@ -109,11 +109,12 @@ $lightergrey:#5d5c6191;
 @mixin footerforpage{
     margin-top:0.15%;
     display:flex;
-    background-color: #807676;
-    // border:max(0.2vw,0.2vh) solid $color_border;
+    background-color: rgba(0, 0, 0, 0.493);
+    border-top:max(0.1vw,0.1vh) solid $color_border;
     align-items: center;
     .LogoBox {
         display: flex;
+        padding:1%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -242,7 +243,7 @@ $lightergrey:#5d5c6191;
         }
         nav{
             .spisok{ 
-                background-color: #807676;
+                background-color: black;
                 border:max(0.2vw,0.2vh) solid $color_border;
                 justify-content: center;
                 visibility: hidden;
