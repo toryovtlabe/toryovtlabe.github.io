@@ -270,6 +270,7 @@ body .info1 img {
   margin-left: 1.5vh;
   margin-bottom: 1.5vh;
   width: 45vw;
+  border-radius: max(1vw, 1vh);
 }
 body .info1 .text {
   margin-left: 1vw;
@@ -311,6 +312,7 @@ body .info2 img {
   margin-left: 1.5vh;
   margin-bottom: 1.5vh;
   width: 45vw;
+  border-radius: max(1vw, 1vh);
 }
 body .info2 .text {
   -webkit-box-flex: 2;

@@ -397,6 +397,7 @@ body .line1 form .send input {
   -o-transition: transform 0.4s, border-color 0.4s;
   transition: transform 0.4s, border-color 0.4s;
   transition: transform 0.4s, border-color 0.4s, -webkit-transform 0.4s;
+  cursor: pointer;
 }
 body .line1 form .send input:hover {
   -webkit-transform: scale(1.1);

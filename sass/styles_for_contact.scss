@@ -191,6 +191,7 @@ body {
                 border:0.2vw solid black;
                 color:white;
                 transition: transform 0.4s,border-color 0.4s;
+                cursor:pointer;
                 &:hover{
                     border-color: white;
                     transform:scale(1.1);
@@ -204,6 +205,7 @@ body {
         flex-wrap: wrap;
         padding:2%;
         iframe{
+            border-radius:max(1vw,1vh);
             width:700px;
             height:400px;
         }

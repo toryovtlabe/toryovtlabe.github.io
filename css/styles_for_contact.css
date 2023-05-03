@@ -459,6 +459,7 @@ body form .right .send {
   -o-transition: transform 0.4s, border-color 0.4s;
   transition: transform 0.4s, border-color 0.4s;
   transition: transform 0.4s, border-color 0.4s, -webkit-transform 0.4s;
+  cursor: pointer;
 }
 body form .right .send:hover {
   border-color: white;
@@ -477,6 +478,7 @@ body .map {
   padding: 2%;
 }
 body .map iframe {
+  border-radius: max(1vw, 1vh);
   width: 700px;
   height: 400px;
 }
