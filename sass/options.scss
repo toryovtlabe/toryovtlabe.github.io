@@ -91,10 +91,6 @@ $lightergrey:#5d5c6191;
         .name {
             p
             {
-                // text-shadow:0.1vw 0.1vw 0 black,
-                //         -0.1vw -0.1vw 0 black,
-                //         -0.1vw 0.1vw 0 black,
-                //         0.1vw -0.1vw 0 black;
                 font-size:max(2vw,2vh);
                 text-align:center;
                 color:#C1C1C1;
@@ -133,10 +129,6 @@ $lightergrey:#5d5c6191;
                 color:#C1C1C1;
                 font-family: 'Questrial', sans-serif;
                 user-select: none;
-                // text-shadow:0.1vw 0.1vw 0 black,
-                //         -0.1vw -0.1vw 0 black,
-                //         -0.1vw 0.1vw 0 black,
-                //         0.1vw -0.1vw 0 black;
             }
             margin:auto;
         }
